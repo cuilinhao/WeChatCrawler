@@ -3,7 +3,7 @@
 实现自动化输入手机号，然后通过手机号获取微信号，以及头像，昵称等
 核心代码如下：
 
->>>>>>>> 搜索   >>>>>>>>>>>
+--------- 搜索   -----------
 
 %hook MMSearchBar
 
@@ -28,7 +28,7 @@
             
  %end
  
- >>>>>>>>>> 获取微信号 >>>>>>>>>>>>>
+------------ 获取微信号 ----------
  
  %hook ContactInfoViewController
 
@@ -46,6 +46,7 @@
    
 
    //地区
+   
     NSString *country = [m_contact valueForKey:@"m_nsCountry"] ? [m_contact valueForKey:@"m_nsCountry"] : @"";
     NSString *province = [m_contact valueForKey:@"m_nsProvince"];
     province = province.length > 0 ? [NSString stringWithFormat:@"_%@",[m_contact valueForKey:@"m_nsProvince"]] : @"";
@@ -57,6 +58,7 @@
 
     // 昵称
     [dic3 setObject:[m_contact valueForKey:@"m_nsNickName"] forKey:@"Contact_Nick"];
+    
     //性别
     [dic3 setObject:[m_contact valueForKey:@"m_uiSex"]  forKey:@"Contact_Sex"];
 
