@@ -1,0 +1,9 @@
+Package: com.lh.test
+Name: crawlerTest
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: 崔林豪
+Author: 崔林豪
+Section: Tweaks
