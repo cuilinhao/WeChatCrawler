@@ -5,6 +5,8 @@
 
 --------- 搜索   -----------
 
+```
+
 %hook MMSearchBar
 
 - (_Bool)searchBarShouldBeginEditing:(id)arg1
@@ -28,7 +30,12 @@
             
  %end
  
+ ```
+ 
+ 
 ------------ 获取微信号 ----------
+ 
+ ```
  
  %hook ContactInfoViewController
 
@@ -57,21 +64,28 @@
     [dic3 setObject:regionStr forKey:@"Contact_RegionCode"];
 
     // 昵称
+    
     [dic3 setObject:[m_contact valueForKey:@"m_nsNickName"] forKey:@"Contact_Nick"];
     
     //性别
+    
     [dic3 setObject:[m_contact valueForKey:@"m_uiSex"]  forKey:@"Contact_Sex"];
 
     //微信号
+    
     [dic3 setObject:[m_contact valueForKey:@"m_nsAliasName"]  forKey:@"Contact_Alias"];
 
     //用户ID
+    
     [dic3 setObject:[m_contact valueForKey:@"m_nsUsrName"]  forKey:@"Contact_User"];
 
 
 }
 
 %end
+
+```
+
 
             
             
